@@ -1,0 +1,87 @@
+/* Style pour le restaurant */
+body {
+    padding-top: 76px; /* Pour compenser la navbar fixe */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    min-height: 500px;
+}
+
+/* Navigation active */
+.nav-link.active {
+    color: #ffc107 !important;
+    font-weight: bold;
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Card hover effect */
+.card {
+    transition: transform 0.3s ease;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Boutons */
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    font-weight: bold;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #e0a800;
+}
+
+/* Responsive images */
+.img-fluid {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Section padding */
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Footer links */
+footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffc107 !important;
+}
+
+/* Menu section title */
+#menu h2 {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+#menu h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: #ffc107;
+}

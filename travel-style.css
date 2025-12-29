@@ -1,0 +1,115 @@
+/* Styles pour l'agence de voyage */
+body {
+    padding-top: 76px;
+    font-family: 'Montserrat', 'Segoe UI', sans-serif;
+}
+
+/* Hero Section Travel */
+.hero-travel {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+                url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 85vh;
+    min-height: 600px;
+}
+
+/* Shadow hover effect */
+.shadow-hover {
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.shadow-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* Destination images */
+.destination-img {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Accordion customization */
+.accordion-button {
+    font-weight: 600;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #0d6efd;
+    background-color: rgba(13, 110, 253, 0.1);
+}
+
+.accordion-body {
+    padding: 25px;
+}
+
+/* Section styling */
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* Primary button */
+.btn-primary {
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+}
+
+/* Navigation active link */
+.nav-link.active {
+    color: #0d6efd !important;
+    border-bottom: 3px solid #0d6efd;
+}
+
+/* Form styling */
+.form-control, .form-select {
+    padding: 12px 15px;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Badge styling */
+.badge {
+    padding: 8px 15px;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+/* Social icons hover */
+.social-icons a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #0d6efd !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-travel {
+        height: 60vh;
+        background-attachment: scroll;
+    }
+    
+    .display-3 {
+        font-size: 2.5rem;
+    }
+}
